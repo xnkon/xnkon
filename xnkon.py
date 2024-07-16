@@ -10,7 +10,6 @@ Please add the following to your .bashrc, .bash_profile, etc to make available i
 export PATH=$PATH:/path/to/xnkon
 ```
 """
-from argparse import ArgumentParser
 import requests
 
 
@@ -36,7 +35,7 @@ def koan():
 
         text = resp.text.split('<h2>')[1]
 
-        italic_title = f"\033[3m{text.split('</h2>')[0].replace('\n', '')}\033[0m" 
+        italic_title = f"\033[3m{text.split('</h2>')[0].replace('\n', '')}\033[0m"
         print(italic_title)
         for p in text.split('/center>\n')[1].split('<center>')[0].split('<p>')[2:-1]:
             t = ' '.join(
@@ -48,14 +47,10 @@ def koan():
                 if l != '' and not l.isspace()
             ).replace('  ', ' ')
             print(f"> {t}")
-                                                     
-
     except:
         pass
 
 
 if __name__ == '__main__':
-    parser = ArgumentParser(description="Retrieve a random Zen Koan from an online database")
-
     koan()
 

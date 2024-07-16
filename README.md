@@ -4,5 +4,5 @@
 - 🌱 I’m currently learning graphics programming, vim, and how to ace the coding interview 😄
 - ⚡ Fun fact: I build drones for fun
 
-Enjoy the Zen Koan CLI if you want 🗻
+Enjoy the Zen Koan Generator CLI if you want 🗻
 
